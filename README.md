@@ -36,12 +36,12 @@
 	
 	cd C:/work/VirtualBox/VirtualBox-7.1
 
-	icacls <Directory> /reset /t /c
-	icacls <Directory> /inheritance:d /t /c
-	icacls <Directory> /grant *S-1-5-32-545:(OI)(CI)(RX)
-	icacls <Directory> /deny  *S-1-5-32-545:(DE,WD,AD,WEA,WA)
-	icacls <Directory> /grant *S-1-5-11:(OI)(CI)(RX)
-	icacls <Directory> /deny  *S-1-5-11:(DE,WD,AD,WEA,WA)
+	icacls . /reset /t /c
+	icacls . /inheritance:d /t /c
+	icacls . /grant *S-1-5-32-545:(OI)(CI)(RX)
+	icacls . /deny  *S-1-5-32-545:(DE,WD,AD,WEA,WA)
+	icacls . /grant *S-1-5-11:(OI)(CI)(RX)
+	icacls . /deny  *S-1-5-11:(DE,WD,AD,WEA,WA)
 
 	cd ..
 	
