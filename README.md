@@ -25,6 +25,25 @@
  	                                                                              
 </code>		
 	
+
+───────────────────────────────────────────────────────────────────────
+# Preqequisites
+───────────────────────────────────────────────────────────────────────
+
+	https://www.virtualbox.org/manual/ch02.html#install-win-installdir-req
+	
+	mkdir -p C:/work/VirtualBox/VirtualBox-7.1
+	
+	cd C:/work/VirtualBox/VirtualBox-7.1
+
+	icacls <Directory> /reset /t /c
+	icacls <Directory> /inheritance:d /t /c
+	icacls <Directory> /grant *S-1-5-32-545:(OI)(CI)(RX)
+	icacls <Directory> /deny  *S-1-5-32-545:(DE,WD,AD,WEA,WA)
+	icacls <Directory> /grant *S-1-5-11:(OI)(CI)(RX)
+	icacls <Directory> /deny  *S-1-5-11:(DE,WD,AD,WEA,WA)
+
+	cd ..
 	
 	
 ───────────────────────────────────────────────────────────────────────
@@ -35,9 +54,6 @@ VirtualBox for Windows now only ships as an .exe and no longer ships as an .msi.
 
 However the .exe is a self-extracting .msi package and it can be manually extracted.
 
-	mkdir -p C:/work/VirtualBox/VirtualBox-7.1
-	
-	cd C:/work/VirtualBox/
 	
 	wget https://download.virtualbox.org/virtualbox/7.1.4/VirtualBox-7.1.4-165100-Win.exe
 
@@ -46,9 +62,9 @@ However the .exe is a self-extracting .msi package and it can be manually extrac
 	
 a) automatic install (in a windows powershell)
 
-	VirtualBox-7.1.4-165100-Win.exe --extract --path VirtualBox-7.1.4-165100-Win.msi
-
-	msiexec /i "VirtualBox-7.1.4-165100-Win.msi" INSTALLDIR="C:\Work\VirtualBox\virtualbox-7.1" TARGETDIR="C:\Work\VirtualBox\virtualbox-7.1" /qb
+	VirtualBox-7.1.4-165100-Win.exe --extract --path tmp
+	
+	msiexec /i "tmp/VirtualBox-7.1.4-r165100.msi" INSTALLDIR="C:\Work\VirtualBox\virtualbox-7.1" TARGETDIR="C:\Work\VirtualBox\virtualbox-7.1" /qb
 
 
 b) manual install in C:/work/VirtualBox/VirtualBox-7.1
