@@ -2,8 +2,6 @@
 # VirtualBox
 ═══════════════════════════════════════════════════════════════════════
 
-# VirtualBox provisioner
-
 	
 <code> 
 
@@ -25,6 +23,18 @@
  	                                                                              
 </code>		
 	
+The Manufakture box is a lightweight Cloud and Cluster on Windows and full POSIX environment.
+
+It consists: of Syswin, Cygwin, VirtualBox, Vagrant, Docker (Toolbox), Kubernetes (Minikube).
+
+And then a slew of other Development SDKs and tools (Puppet, Perl, Ruby, Python, Java, etc).
+
+This is the Docker bit.
+
+
+# VirtualBox provisioner
+
+
 
 ═══════════════════════════════════════════════════════════════════════
 # AUTOMATED Installation
