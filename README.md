@@ -47,16 +47,17 @@ This is the Docker bit.
 ## Preqequisites
 ───────────────────────────────────────────────────────────────────────
 
-Make sure you have a *Manufacture* SysWin and CygWin full POSIX system running and installed.
+* Make sure you have a *Manufacture* SysWin and CygWin full POSIX system running and installed.
 
-	https://sourceforge.net/p/manufacture/syswin/
+	https://sourceforge.net/p/manufacture/syswin/HEAD/tree/trunk/syswin/
 
-	https://sourceforge.net/p/manufacture/cygwin/
+	https://sourceforge.net/p/manufacture/cygwin/HEAD/tree/trunk/cygwin/
+
 
 Manufacture provides the "su.exe" command to run administrator shells (instead of powershell).
 
-In addition to cygwin, you'll probably have a separate gitbash (installed by DockerToolBox).
 
+* In addition to cygwin, you'll probably have a separate gitbash (installed by DockerToolBox).
 
 	
 	
