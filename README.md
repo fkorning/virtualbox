@@ -36,14 +36,18 @@
 ## Preqequisites
 ───────────────────────────────────────────────────────────────────────
 
-Make sure you have *Manufacture* SysWin and CygWin
+Make sure you have a *Manufacture* SysWin and CygWin full POSIX system running and installed.
 
 	https://sourceforge.net/p/manufacture/syswin/
 
 	https://sourceforge.net/p/manufacture/cygwin/
 
-In addition to cygwin, you'll want gitbash.
+Manufacture provides the "su.exe" command to run administrator shells (instead of powershell).
 
+In addition to cygwin, you'll probably have a separate gitbash (installed by DockerToolBox).
+
+
+	
 	
 ───────────────────────────────────────────────────────────────────────
 ## Installation
